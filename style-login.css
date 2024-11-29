@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Kufam:wght@700&family=Tajawal:wght@400;700&display=swap");
+
+body {
+    font-family: "Tajawal", sans-serif;
+    background: linear-gradient(-135deg, #239673, #243b53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: 400% 400%;
+    margin: 0;
+    animation: background-move 5S ease-in-out alternate-reverse infinite;
+}
+@keyframes background-move{
+    to{
+        background-position: 0% 100%;
+    }
+    
+}
+.login-container {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    margin-right: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #239673;
+    outline: none;
+}
+
+.login-button {
+    font-family: "Tajawal", sans-serif;
+    width: 40%;
+    padding: 12px;
+    background-color: #239673;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background-color: #1b7157;
+    width: 60%;
+    border-radius: 30px;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    display: none;
+    margin-top: 10px;
+}

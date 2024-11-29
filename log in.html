@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجهة تسجيل دخول</title>
+    <link rel="stylesheet" href="style-login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h1>تسجيل الدخول</h1>
+    <div class="error-message" id="error-message">اسم المستخدم أو كلمة المرور غير صحيحة</div>
+    <div class="input-group">
+        <label for="username">اسم المستخدم</label>
+        <input type="text" id="username" required>
+    </div>
+    <div class="input-group">
+        <label for="password">كلمة المرور</label>
+        <input type="password" id="password" required>
+    </div>
+    <button class="login-button" onclick="login()">تسجيل الدخول</button>
+</div>
+
+<script src="script-login.js"></script>
+</body>
+</html>

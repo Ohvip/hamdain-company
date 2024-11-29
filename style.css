@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Kufam:wght@700&family=Tajawal:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  background: #d9e2ec;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: #f0f4f8;
+}
+
+h1 span {
+  color: #27ab83;
+}
+
+h2 {
+  background-color: #24a17c;
+  border-radius: 15px;
+  color: #243b53;
+  font-size: 3.4rem;
+  margin-bottom: 1rem;
+  margin-top: 5rem; /*هذي الإزاحة من أجل أن لايحجب ال nav على عنوان ال section*/
+}
+
+h3 {
+  color: #2b4561;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 2rem;
+  width: 100%;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #d5d5d5;
+}
+
+p {
+  font-size: 1.6rem;
+  color: #345375;
+  line-height: 2;
+}
+
+/* header Section */
+
+header {
+  position: static;
+  top: 0;
+  width: 100%;
+  background: #334e68;
+  color: #f0f4f8;
+  border-bottom: 2px solid #27ab83;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 10%;
+}
+
+header img {
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #333;
+  border-style: outset;
+  border-color: #27ab83;
+}
+
+header .logo {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  color: #f0f4f8;
+}
+
+/* nav Section */
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #334e68;
+  display: flex;
+  align-items: center;
+  min-height: 6vh;
+  font-size: 1.6rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  flex: content;
+}
+
+nav ul li a {
+  color: #f0f4f8;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(23, 191, 144);
+}
+
+nav ul li .button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0rem 1rem;
+  border-radius: 10rem;
+  border: none;
+  transition: 0.2s;
+}
+
+nav ul li .button:hover {
+  transform: scale(1.08);
+  background-color: #24a17c;
+}
+
+nav ul li button a:hover {
+  color:#243b53;
+}
+
+.button a {
+  color: #243b53;
+  text-decoration: none;
+}
+
+/* main Section */
+
+.super {
+  height: 90vh;
+  position: relative;
+}
+
+.super::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+      180deg,
+      rgba(51, 78, 104, 0.2) 0%,
+      rgba(20, 63, 92, 0.8) 20%
+    ),
+    url("./images/لغات-برمجة-11111.jpg");
+
+  animation: superbg 3s ease-in;
+  background-position: center;
+}
+
+.content {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /*غير ضرورية*/
+  height: 90vh;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0.75rem 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: #243b53;
+  background: #27ab83;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #24a17c;
+  box-shadow: #243b53 1px 0px 1px,-1px 0px 1px,0px 1px 0px,0px -1px 0px;
+}
+
+.btn:active {
+  scale: 0.98;
+}
+
+/* Qualities Section */
+#qualities {
+  width: 90%;
+  max-width: 1366px;
+  margin: 4rem auto;
+  height: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.qualities-container {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 2rem;
+  padding-top: 5rem;
+}
+
+.quality {
+  background: #bcccdc;
+  padding: 4rem 0;
+  width: 30%;
+  border-radius: 15px;
+}
+
+.quality p {
+  text-align: center;
+  width: 70%;
+  margin: 1rem auto;
+}
+
+.header-quality {
+  display: flex;
+  align-items: center; /*غير ضرورية*/
+  justify-content: center;
+}
+
+i {
+  color: #27ab83;
+  font-size: 2.4rem;
+  margin-left: 1rem;
+  opacity: 0.7;
+}
+
+/* programming-languages Section */
+#programming-languages {
+  width: 90%;
+  max-width: 1366px;
+  margin: 4rem auto;
+  height: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.programming-languages-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-items: space-evenly;
+  grid-gap: 2rem;
+  padding-top: 5rem;
+}
+
+.programming-language {
+  background: #bcccdc;
+  padding: 4rem 0;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.header-programming-language {
+  display: flex;
+  align-items: center; /*غير ضرورية*/
+  justify-content: center;
+}
+
+i {
+  color: #27ab83;
+  font-size: 2.4rem;
+  margin-left: 1rem;
+  opacity: 0.7;
+}
+
+/* About us */
+.about-container {
+  background: #334e68;
+}
+.about-us {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-us .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content h2 {
+  color: #d9d9d9;
+  
+  background-color:transparent;
+}
+.about-content p {
+  margin-top: 1rem;
+  width: 80%;
+  color: #d5d5d5;
+}
+
+/* Contact us */
+.contact-us {
+  width: 90%;
+  max-width: 1366px;
+  margin: 5rem auto 0 auto;
+  height: 100%;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  width: 100%;
+  align-items: center;
+}
+
+form .btn {
+  width: 100px;
+  text-align: center;
+}
+
+label,
+input,
+textarea,
+.btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+label,
+input,
+textarea {
+  margin-bottom: 1.5rem;
+}
+
+input,
+textarea {
+  width: 80%;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.75rem 2rem;
+}
+.contact-us {
+  text-align: center;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  background: #243b53;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+footer p {
+  color: #d9d9d9;
+}
+
+@keyframes superbg {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+
+@media (max-width: 1400px) {
+  .super .content {
+    align-items: center;
+    text-align: center;
+  }
+  .super h4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1042px) {
+  html {
+    font-size: 10px;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .qualities-container {
+    flex-wrap: wrap;
+  }
+  .quality {
+    width: 100%;
+  }
+
+  .programming-languages-container {
+    flex-wrap: wrap;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+
+@media (max-width: 752px) {
+  html {
+    font-size: 8px;
+  }
+
+  .about-us img {
+    display: none;
+  }
+  .about-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  input,
+  textarea {
+    width: 40%;
+  }
+}
